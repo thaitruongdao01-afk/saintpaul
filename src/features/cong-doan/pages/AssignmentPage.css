@@ -1,0 +1,228 @@
+/* src/features/cong-doan/pages/AssignmentPage.css */
+/* Style matching VocationJourneyListPage */
+
+/* Stats Cards - Simple style */
+.stat-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card .card-body {
+  padding: 1.25rem;
+}
+
+.stat-card h4 {
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #2c3e50;
+}
+
+.stat-card small {
+  font-size: 0.8rem;
+}
+
+.stat-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.stat-icon.bg-primary {
+  background: #042954;
+}
+
+.stat-icon.bg-success {
+  background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+}
+
+.stat-icon.bg-info {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.stat-icon.bg-warning {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+}
+
+/* DataTable Overrides */
+.assignment-table .datatable-header {
+  background: #042954 !important;
+}
+
+.assignment-table .datatable-header th {
+  color: white !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.75rem 1rem;
+}
+
+.assignment-table .datatable-body td {
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+  font-size: 0.875rem;
+}
+
+/* Role Badge Styles */
+.role-badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.role-badge.bg-warning-subtle {
+  background-color: #ffeaa7 !important;
+  color: #d63031;
+}
+
+.role-badge.bg-info-subtle {
+  background-color: #d1ecf1 !important;
+  color: #0c5460;
+}
+
+.role-badge.bg-secondary-subtle {
+  background-color: #e9ecef !important;
+  color: #495057;
+}
+
+.role-badge.bg-primary-subtle {
+  background-color: #e8e8ff !important;
+  color: #667eea;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* Action Column - Ensure same header style */
+.assignment-table .datatable th.action-column,
+.assignment-table thead th:last-child {
+  background: #042954 !important;
+  color: white !important;
+}
+
+/* Action Buttons - Outline style like CongDoanListPage */
+.assignment-table .btn-outline-info,
+.assignment-table .btn-outline-primary,
+.assignment-table .btn-outline-danger {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.assignment-table .btn-outline-info:hover,
+.assignment-table .btn-outline-primary:hover,
+.assignment-table .btn-outline-danger:hover {
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+/* Modal Styles */
+.modal-header-custom {
+  background: #042954;
+  color: white;
+  border: none;
+}
+
+.modal-header-custom .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* Info Card in View Modal */
+.info-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.25rem;
+  height: 100%;
+  border: 1px solid #e9ecef;
+}
+
+.info-card h6 {
+  color: #042954;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #042954;
+  display: flex;
+  align-items: center;
+}
+
+.info-card h6 i {
+  color: #042954;
+}
+
+.info-card .info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-card .info-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #dee2e6;
+  font-size: 0.9rem;
+}
+
+.info-card .info-item:last-child {
+  border-bottom: none;
+}
+
+.info-card .info-label {
+  font-weight: 600;
+  color: #495057;
+  min-width: 100px;
+}
+
+.info-card .info-value {
+  color: #212529;
+  text-align: right;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #95a5a6;
+}
+
+.empty-state i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stat-card .card-body {
+    padding: 1rem;
+  }
+  
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .stat-card h4 {
+    font-size: 1.25rem;
+  }
+}

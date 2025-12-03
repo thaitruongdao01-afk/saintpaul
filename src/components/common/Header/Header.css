@@ -1,0 +1,940 @@
+/* ============================================
+   HEADER MENU - AKKHOR STYLE
+   ============================================ */
+
+.header-menu-one {
+  background: #ffffff;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  display: flex;
+  align-items: stretch;
+  height: 68px;
+}
+
+/* ============================================
+   NAV BAR HEADER (Logo Area)
+   ============================================ */
+
+.nav-bar-header-one {
+  background: linear-gradient(to right, #ff9d01, #ffaa01);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  min-width: 280px;
+  flex-shrink: 0;
+  padding: 0 15px;
+}
+
+.header-logo {
+  padding: 0;
+}
+
+.header-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.header-logo .logo-icon {
+  font-size: 1.75rem;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.header-logo .logo-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+/* ============================================
+   MOBILE NAV BAR
+   ============================================ */
+
+.mobile-nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+.mobile-nav-bar .navbar-toggler {
+  background: transparent;
+  border: none;
+  color: #444444;
+  font-size: 1.5rem;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.mobile-nav-bar .navbar-toggler:focus {
+  outline: none;
+}
+
+.mobile-nav-bar .navbar-toggler:hover {
+  color: #ffaa01;
+}
+
+.pulse-animation i {
+  animation: pulse 1500ms infinite;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #111111;
+  }
+  40% {
+    box-shadow: 0 0 0 30px rgba(255, 194, 17, 0);
+  }
+  70% {
+    box-shadow: 0 0 0 30px rgba(255, 194, 17, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 194, 17, 0);
+  }
+}
+
+/* ============================================
+   HEADER MAIN MENU
+   ============================================ */
+
+.header-main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  padding: 0 20px;
+  height: 68px;
+}
+
+.header-main-menu .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 68px;
+  gap: 5px;
+}
+
+/* ============================================
+   SEARCH BAR
+   ============================================ */
+
+.header-search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 68px;
+}
+
+.stylish-input-group {
+  display: flex;
+  align-items: center;
+  border: none;
+  height: 40px;
+  width: 300px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.stylish-input-group .form-control {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: transparent;
+  color: #111111;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 38px;
+  padding: 0 10px;
+  flex: 1;
+}
+
+.stylish-input-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.stylish-input-group .form-control::placeholder {
+  color: #888888;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.stylish-input-group .input-group-addon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0;
+  background: transparent !important;
+  flex-shrink: 0;
+}
+
+.stylish-input-group .input-group-addon button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stylish-input-group .input-group-addon button:focus {
+  outline: none;
+}
+
+.stylish-input-group .input-group-addon button i {
+  color: #888888;
+  font-size: 16px;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.stylish-input-group .input-group-addon button:hover i {
+  color: #ffaa01;
+}
+
+/* ============================================
+   NAVBAR ITEMS
+   ============================================ */
+
+.navbar-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 68px;
+  flex-shrink: 0;
+}
+
+.navbar-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  height: 68px;
+  color: #646464;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar-nav-link:hover {
+  color: #ffaa01;
+  text-decoration: none;
+}
+
+.navbar-nav-link::after {
+  display: none !important;
+}
+
+.navbar-nav-link > i {
+  font-size: 18px;
+  line-height: 1;
+  color: #646464;
+}
+
+.navbar-nav-link:hover > i {
+  color: #ffaa01;
+}
+
+/* ============================================
+   ADMIN DROPDOWN
+   ============================================ */
+
+.header-admin {
+  margin-left: 10px;
+}
+
+.header-admin .navbar-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  height: 68px;
+}
+
+.admin-title {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.admin-title .item-title,
+.admin-title h4.item-title,
+.admin-title h5.item-title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111111;
+  line-height: 1.4;
+}
+
+.admin-title span {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #646464;
+  display: block;
+  line-height: 1.3;
+}
+
+.admin-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ffaa01;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff9d01, #ffaa01);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Admin Dropdown Menu */
+.header-admin .dropdown-menu {
+  min-width: 250px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(33, 30, 30, 0.15);
+  margin-top: 10px;
+  animation: dropdownanimate 200ms ease-in;
+}
+
+.header-admin .dropdown-menu .item-header {
+  text-align: center;
+  background-color: #ffa001;
+  padding: 20px 25px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+}
+
+.header-admin .dropdown-menu .item-header:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid #ffa001;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: -8px;
+  right: 14px;
+}
+
+.header-admin .dropdown-menu .item-header .item-title {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header-admin .dropdown-menu .item-content {
+  padding: 10px 0;
+}
+
+.settings-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.settings-list li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  color: #646464;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.settings-list li a:hover {
+  background-color: #f6f6f6;
+  color: #ffaa01;
+}
+
+.settings-list li a i {
+  width: 22px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #646464;
+}
+
+.settings-list li a:hover i {
+  color: #ffaa01;
+}
+
+/* ============================================
+   MESSAGE DROPDOWN
+   ============================================ */
+
+.header-message .navbar-nav-link,
+.header-notification .navbar-nav-link {
+  position: relative;
+  color: #646464;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  height: 68px;
+}
+
+.header-message .navbar-nav-link > i,
+.header-notification .navbar-nav-link > i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.header-message .navbar-nav-link span,
+.header-notification .navbar-nav-link span {
+  position: absolute;
+  top: 18px;
+  right: 5px;
+  height: 18px;
+  width: 18px;
+  line-height: 14px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header-message .navbar-nav-link span {
+  background-color: #2ad7c5;
+}
+
+.header-notification .navbar-nav-link span {
+  background-color: #ff3131;
+}
+
+.header-message .dropdown-menu,
+.header-notification .dropdown-menu {
+  min-width: 350px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(33, 30, 30, 0.15);
+  margin-top: 10px;
+  animation: dropdownanimate 200ms ease-in;
+}
+
+.header-message .item-header {
+  text-align: center;
+  background-color: #2ad7c5;
+  padding: 20px 25px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+}
+
+.header-message .item-header:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid #2ad7c5;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: -8px;
+  right: 14px;
+}
+
+.header-notification .item-header {
+  text-align: center;
+  background-color: #ff3131;
+  padding: 20px 25px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+}
+
+.header-notification .item-header:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid #ff3131;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: -8px;
+  right: 14px;
+}
+
+.header-message .item-header .item-title,
+.header-notification .item-header .item-title {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.header-message .item-content,
+.header-notification .item-content {
+  padding: 20px 25px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+/* Media Item in Dropdown */
+.header-message .media,
+.header-notification .media {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.header-message .media:last-child,
+.header-notification .media:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Message Avatar */
+.item-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.item-img .avatar-text {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.item-img.author-online::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  background: #08b13c;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+/* Notification Icon */
+.item-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.item-icon i {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* Media Body */
+.media-body {
+  flex: 1;
+  margin-left: 15px;
+  min-width: 0;
+}
+
+.media-body.space-sm {
+  margin-left: 15px;
+}
+
+.media-body .item-title {
+  margin-bottom: 4px;
+}
+
+.media-body .item-title a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.media-body .item-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #444444;
+  font-size: 14px;
+}
+
+.media-body .item-time {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #848484;
+}
+
+.media-body p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #646464;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.media-body .post-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #444444;
+  font-size: 14px;
+}
+
+.media-body span {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #848484;
+}
+
+/* ============================================
+   LANGUAGE DROPDOWN
+   ============================================ */
+
+.header-language {
+  margin-right: 42px;
+  position: relative;
+}
+
+.header-language .navbar-nav-link {
+  font-size: 15px;
+  color: #444444;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 12px;
+}
+
+.header-language .navbar-nav-link i {
+  font-size: 18px;
+  color: #ffab01;
+  margin-right: 10px;
+}
+
+.header-language .navbar-nav-link::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-language .dropdown-menu {
+  min-width: 140px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(33, 30, 30, 0.15);
+  animation: dropdownanimate 200ms ease-in;
+}
+
+.header-language .dropdown-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.header-language .dropdown-item:hover {
+  background: #f6f6f6;
+  color: #ffaa01;
+}
+
+/* ============================================
+   DROPDOWN - HOVER BEHAVIOR
+   ============================================ */
+
+.navbar-item .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+  background: #ffffff;
+  z-index: 1060;
+  margin: 0;
+}
+
+.navbar-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Utility classes for dropdown content */
+.dropdown-menu .text-muted {
+  color: #848484;
+}
+
+.dropdown-menu .text-center {
+  text-align: center;
+}
+
+.dropdown-menu .py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.dropdown-menu .text-danger {
+  color: #dc3545;
+}
+
+.dropdown-menu .text-danger:hover {
+  color: #bd2130;
+  background-color: #fff5f5;
+}
+
+/* ============================================
+   DROPDOWN ANIMATION
+   ============================================ */
+
+@keyframes dropdownanimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   BACKGROUND COLORS
+   ============================================ */
+
+.bg-skyblue {
+  background: #40dfcd !important;
+}
+
+.bg-yellow {
+  background: #fbd540 !important;
+}
+
+.bg-pink {
+  background: #f939a1 !important;
+}
+
+.bg-orange {
+  background: #fbd540 !important;
+}
+
+.bg-violet-blue {
+  background: #a864a8 !important;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 991px) {
+  .header-menu-one {
+    height: 56px;
+  }
+
+  .nav-bar-header-one {
+    width: auto;
+    min-width: auto;
+    padding: 0 15px;
+    height: 56px;
+  }
+
+  .header-logo .logo-text {
+    display: none;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .toggle-button .item-link {
+    height: 56px;
+  }
+
+  .header-main-menu {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    height: auto;
+  }
+
+  .header-main-menu.show {
+    display: flex;
+  }
+
+  .header-main-menu .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 0;
+  }
+
+  .navbar-item {
+    border-bottom: 1px solid #e8e3e3;
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar-item:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-item .navbar-nav-link {
+    padding: 12px 0;
+    height: auto;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .stylish-input-group {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-admin {
+    order: -1;
+    margin-left: 0;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .header-admin .navbar-nav-link {
+    height: auto;
+    padding: 0;
+  }
+
+  .header-search-bar {
+    display: none;
+  }
+
+  .header-message .navbar-nav-link,
+  .header-notification .navbar-nav-link {
+    height: auto;
+    padding: 12px 0;
+  }
+
+  .header-message .navbar-nav-link span,
+  .header-notification .navbar-nav-link span {
+    position: static;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .admin-title {
+    display: none;
+  }
+
+  .header-message .dropdown-menu,
+  .header-notification .dropdown-menu {
+    min-width: 280px;
+    right: -30px !important;
+  }
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
+.item-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.item-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.item-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 5px;
+}
+
+.item-content::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}

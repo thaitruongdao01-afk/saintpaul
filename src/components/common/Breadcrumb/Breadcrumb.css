@@ -1,0 +1,107 @@
+/* src/components/common/Breadcrumb/Breadcrumb.css - AKKHOR STYLE */
+
+.breadcrumbs-area {
+  padding: 34px 0 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumbs-area h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #111111;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.breadcrumbs-area ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-area ul li {
+  display: inline-block;
+  color: #fea801;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  margin-right: 15px;
+  padding-right: 10px;
+}
+
+.breadcrumbs-area ul li:before {
+  content: "/";
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  color: #fea801;
+}
+
+.breadcrumbs-area ul li a {
+  color: #646464;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.breadcrumbs-area ul li a:hover {
+  color: #fea801;
+}
+
+.breadcrumbs-area ul li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.breadcrumbs-area ul li:last-child:before {
+  display: none;
+}
+
+.breadcrumbs-area ul li span {
+  color: #fea801;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .breadcrumbs-area {
+    padding: 25px 0 30px;
+  }
+
+  .breadcrumbs-area h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumbs-area {
+    padding: 20px 0 25px;
+  }
+
+  .breadcrumbs-area h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .breadcrumbs-area ul li {
+    font-size: 14px;
+    margin-right: 12px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 575px) {
+  .breadcrumbs-area h3 {
+    font-size: 20px;
+  }
+
+  .breadcrumbs-area ul li {
+    font-size: 13px;
+  }
+}
